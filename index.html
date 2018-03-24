@@ -5,14 +5,19 @@
 	<title>Document</title>
 	<link rel="stylesheet" type="text/css" href="stylesheet.css">
 	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+	<script
+  		src="https://code.jquery.com/jquery-3.3.1.min.js"
+  		integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  		crossorigin="anonymous">
+  	</script>
 </head>
 <body>
 	<div class="container"><!-- header menu/icons  name bigger, other icons smaller, put web developer in title-->
 		<div class="header">
-			<a><div class="header-item item1">Daniel Flynn</div></a>
-			<a><div class="header-item item2">Skills/Projects</div></a>
-			<a><div class="header-item item3">About</div></a>
-			<a><div class="header-item item4">Contact</div></a>
+			<a><div class="header-item item1" id="name">Daniel Flynn</div></a>
+			<a><div class="header-item item2" id="about-button">About</div></a>
+			<a><div class="header-item item3" id="skills-button">Skills/Projects</div></a>
+			<a><div class="header-item item4" id="contact-button">Contact</div></a>
 			
 		</div>
 		<!-- jumbotron smaller pictures, picture of me? -->
@@ -20,7 +25,7 @@
 			<div id="line-content">Web Developer</div>
 		</div>	
 		<div>
-			<img class="photo" src="http://edoophotography.zenfolio.com/img/s5/v132/p2769722582.jpg">
+			<img class="photo" src="./assets/cute.jpg">
 		</div>
 		<div class="jumbotron">
 			<div class="jumbotron-item item6"><img src="https://upload.wikimedia.org/wikipedia/fr/c/c8/Twitter_Bird.svg" alt="Twitter API"></div>
@@ -32,28 +37,30 @@
 		</div>
 		
 		<!-- intro section -->
-		<a><div class="about">
+		<a><div class="about" id="about-section">
 			<div class="about-item">My name is Daniel Flynn - I am a teacher and web developer in Houston, Texas seeking to create valuable experiences for web users and students.</div>
 		</div></a>
 		<!-- about skills/experience -->
-		<div class="skills">
+		<div class="skills" id="skills-section">
 			<div class="skills-item item12">I have a broad interest in all things web - and I hope to expand my skillset beyond my core competencies in HTML, CSS, and Javascript.</div>
 			<div class="skills-item item13">I have experience working with best practices in ES6 and CSS Grid, experience with libraries and frameworks such as jQuery and React, and APIs such as the Twitter API and Web Audio API.</div>
 			<div class="skills-item item14">I also seek to be experimental and pursue interesections of my personal and professional interests, especially music and education.</div>
 		</div>
 		<!-- contact -->
-		<div class="contact">
-			<a href="https://www.facebook.com/daniel.flynn.568"><div class="contact-item item15"><img class="contact-item-photo" src="./logos/fb.png"></div></a>
-			<a href="https://twitter.com/flynndcs"><div class="contact-item item16"><img class="contact-item-photo" src="./logos/tw.svg"></div></a>
-			<a href="https://github.com/flynndcs"><div class="contact-item item17"><img class="contact-item-photo" src="./logos/gh.png"></div></a>
+		<div class="contact" id="contact-section">
+			<a href="https://www.facebook.com/daniel.flynn.568"><div class="contact-item item15"><img class="contact-item-photo" src="./assets/fb.png"></div></a>
+			<a href="https://twitter.com/flynndcs"><div class="contact-item item16"><img class="contact-item-photo" src="./assets/tw.svg"></div></a>
+			<a href="https://github.com/flynndcs"><div class="contact-item item17"><img class="contact-item-photo" src="./assets/gh.png"></div></a>
 			<a href="https://www.linkedin.com/in/flynndcs
-"><div class="contact-item item18"><img class="contact-item-photo" src="./logos/li.png"></div></a>
+"><div class="contact-item item18"><img class="contact-item-photo" src="./assets/li.png"></div></a>
 
 		</div>
 		<!-- footer menu/icons -->
 		<a><div class="footer">
 			Daniel Flynn 2018
 		</div></a>
+
 	</div>
+	<script type="text/javascript" src="./script.js"></script>
 </body>
 </html>
